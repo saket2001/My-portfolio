@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:oswald;
+}
+@font-face{
+    font-family: oswald;
+    src: url("Oswald-VariableFont_wght.ttf");
+}
+/* for laptop*/
+body{
+    background: rgba(0, 0, 0, 0.74);
+    background-image: url("sign-in_page_background2.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    color: white;
+}
+/* nav css*/
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-items , .company-logo{
+    text-transform: uppercase;
+    padding: 5px 1%;
+    font-size: 20px;
+}
+.nav-container>.nav-items>a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.nav-container>.nav-items>a:hover{
+    color: rgb(255, 9, 71);
+    text-decoration: underline red;
+}
+.company-logo{
+    width: 200px;
+    text-align: center;
+}
+.special{
+    background-color: red;
+    padding: 2%;
+    font-size: 18px;
+    color: white;
+}
+/* main */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 5%;
+    background-color: white;
+    color: black;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.733), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+    border-radius: 15px;
+}
+.heading{
+    font-size: 20px;
+    text-align: left;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+.form-item{
+    text-align: center;
+    margin: 3%;
+    padding: 1%;
+}
+input[type=text]{
+    border: none;
+    outline: none;
+    padding: 5%;
+    margin: 2%;
+    border: 1px solid rgb(121, 105, 214);
+    width: 300px;
+}
+input[type=password]{
+    border: none;
+    outline: none;
+    padding: 5%;
+    margin: 2%;
+    border: 1px solid rgb(121, 105, 214);
+    width: 300px;
+}
+input:hover{
+    border: 1px solid rgb(121, 105, 214);
+    border-radius: 10px;
+}
+.sign-in-btn{
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 1% 2%;
+    margin: 1% 2%;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+}
+.sign-in-btn:hover{
+    background-color: rgb(144, 172, 81);
+    border: 1px solid rgb(144, 172, 81);
+    color: rgb(255, 255, 255);
+}
+.form-text>a{
+    text-decoration: none;
+    color: black;
+}
+.form-text>a:hover{
+    text-decoration: underline red;
+    color: black;
+}
+
+/* for mobile*/
+@media only screen and (max-width:600px){
+    body{
+        background:rgba(0, 0, 0, 0.829);
+    }
+    .nav-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav-items , .company-logo{
+        font-size: 15px;
+        text-align: start;
+    }
+    .form-container{
+        width: 90%;
+    }
+}
