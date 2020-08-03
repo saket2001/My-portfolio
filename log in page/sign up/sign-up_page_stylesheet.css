@@ -61,7 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 1% 5%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     width: 30%;
     text-align: center;
@@ -119,6 +119,10 @@ input:hover{
     border: 1px solid rgb(144, 172, 81);
     color: rgb(255, 255, 255);
 }
+.form-text{
+    font-size: 15px;
+    
+}
 .form-text>a{
     text-decoration: none;
     color: black;
@@ -142,6 +146,9 @@ input:hover{
         text-align: start;
     }
     .form-container{
-        width: 90%;
+        width: 80%;
+    }
+    .form-text{
+        font-size: 12px;
     }
 }
