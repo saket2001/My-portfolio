@@ -3,172 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
-    <script src="https://kit.fontawesome.com/6f628bdd8a.js" crossorigin="anonymous"></script>
-   
-    <title> My Portfolio 2020 </title>
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!--icons--> 
+     <script src="https://kit.fontawesome.com/6f628bdd8a.js" crossorigin="anonymous"></script>
+     <!--fonts-->
+     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
+      <!--icons src-->
+   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
-    <div class="page-container">
-        <div class="left-container">
-            <div class="nav-container">
-                <div class="navbar">
-                    <div class="logo-name">
-                        <h2> Portfolio 2020</h2>
-                    </div> 
-                    <div class="nav-menu">
-                        <span class="hover">         
-                                  <i class="fa fa-align-justify" aria-hidden="true"></i>
-                        </span>
-                        <div class="dropdown-content">
-                            <a href="#about me" class="navbar-btn">About me </a>
-                            <a href="#work" class="navbar-btn">My work</a>
-                            <a href="#contact me " class="navbar-btn">Contact me </a>
-                        </div>
-                    </div>
-                </div>
+    <!--navbar-->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html" class="nav-title">MY PORTFOLIO 2020</a>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div class="name-tag-container">
-                <div class="intro-text">
-                    Hey I am 
-                </div>
-                <div class="my-name-text">
-                    saket <br> chandorkar
-                </div>
-                <div class="skills-text">
-                    Student | Web Developer
-                </div>
+            <div class="nav-items">
+                <a href="#work-section" class="nav-links">My Work</a>
+                <a href="#about-section" class="nav-links">About</a>
+                <a href="#contact-section" class="nav-links">Contact me</a>
             </div>
-            <br>
-            <br>
-            <br>
         </div>
-        <div class="right-container">
-           <div class="follow-me--right-container">
-               <div class="icons-box">
-                 <a href="mailto:saketchandorkar123@gmail.com"><i class="fa fa-envelope-o " aria-hidden="true"></i> </a>
-               </div>
-           </div>
-        </div>
-        <br>
-    </div> 
-    <a name="about me"></a>
-    <section class="about-me">
-        <div class="about-me-container">
-            <div class="about-me-heading">
-                ABOUT  ME...
-            </div>
-            <br>
-            <div class="about-me-text">
-                <p>
-                    I am a second year IT Engineering student. 
-                    I am passionate about Web Development and Web Design I look forward to become a Frontend  Web Developer in future. 
-                    I have good Knowledge in HTML5 , CSS3 , BOOTSTRAP and JAVASCRIPT .
-                    Also started learning UI/UX design for future jobs  
-                </p>
-            </div>
-            <br>
-        </div>
-    </section>
-    <a name="work"></a>
-    <section class="work-info">
         <div class="container">
-            <br>
-            <h2> My work</h2> <br>
-            <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="./images/log in page.png" alt="Log in page Picture">
-                  <div class="card-body">
-                    <h5 class="card-title">Sign in and Sign up page </h5>
-                    <p class="card-text">This is a simple Responsive Sign in and Sign up page with some hover effect.Can be used anywhere for a page </p>
-                    <button type="button" class="btn btn-success">
-                      <a href="https://saket2001.github.io/Cycles-for-rent/log%20in%20page/log-in_page.html" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="./images/Jstimer.png" alt="JS timer picture">
-                  <div class="card-body">
-                    <h5 class="card-title">JS timer</h5>
-                    <p class="card-text">A classic Timer made with html css and vanilla javascript.Supports hour minutes and seconds timer.Give it a try...</p>
-                    <button type="button" class="btn btn-success">
-                      <a href="https://saket2001.github.io/Js-TImer/" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="./images/cyclesforrent.png" alt="Cycles for rent site picture">
-                  <div class="card-body">
-                    <h5 class="card-title">Cycles for rent</h5>
-                    <p class="card-text">A Bicycle renting website frontend made with pure html5 and css3 and will be updated with beautiful animations in future.</p>
-                    <button type="button" class="btn btn-success">
-                      <a href="https://saket2001.github.io/Cycles-for-rent/" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-              </div> <br>
-              <!--
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button type="button" class="btn btn-success">
-                      <a href="" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <button type="button" class="btn btn-success">
-                      <a href="" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <button type="button" class="btn btn-success">
-                      <a href="" class="links-btn">click here to visit</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            -->
-        </div>
-        <br> <br>
-    </div>
-    </section>
-    <a name="contact me"></a>
-    <div class="footer">
-        <br>
-        <div class="footer-container">
-            <div class="footer-text">
-                <p>looking for a intern web developer in <strong>mumbai</strong> ? <br>
-                   I <i class="fa fa-heart" aria-hidden="true"></i> making websites 
-                </p>
+          <div class="name-tag-box">
+            <p class="box1">
+                I AM 
+                <br>
+                SAKET
+                <br>
+                CHANDORKAR
+                <br>
+                <i class="Tag">
+                Web Developer
+                </i>
+            </p>
+            <div class="btn-box">
+                <button class="btns">
+                    Rate site
+                </button>
+                <button class="mail-me">
+                    <a href="mailto:saketchandorkar123@gmail.com"><i class="fa fa-envelope-o " aria-hidden="true"></i> </a>
+                </button>
             </div>
-            <div class="footer-text">
+          </div>
+        </div>
+    </header>
+    <!--About me section-->
+    <a name="about-section"></a>
+    <section class="section1-container">
+            <div class="header">
+                 <p>About me</p>
+                 <p>Services</p>
+            </div>
+            <div class="content">
                 <p>
-                    get in touch <br>
-                    <i class="fa fa-envelope-open "></i> saketchandorkar123@gmail.com
-                    <br> <i class="fa fa-phone" aria-hidden="true"></i> 9967992889
+                    HI my name is saket chandorkar. 
+                    I am 19 year old. I am currently in Second year IT engineering.
+                </p>
+                <p>
+                     Web developing in 
+                     html,css,javascript 
+                     UI/UX Designs
+                     Java,C,C++ programmer
+                 </p>
+            </div>
+    </section>
+    <!--work section-->
+    <a name="work-section"></a>
+    <h2 class="heading">
+        MY WORK
+    </h2>
+    <section class="my-work">
+         <div class="work-box">
+            <a href="https://saket2001.github.io/Cycles-for-rent/log%20in%20page/log-in_page.html" class="workboxlink">
+                <img src="./images/log in page.png" alt="site image" srcset="">
+            </a>
+            <p class="hover-text">
+                Log in page
+                <span>(Hover)</span>
+            </p>
+        </div>
+          <div class="work-box">
+            <a href="https://saket2001.github.io/Cycles-for-rent/" class="workboxlink">
+                <img src="./images/cyclesforrent.png" alt="site image" srcset="">
+            </a>
+             <p class="hover-text">
+                A bicycle renting page
+                  <span>(Hover)</span>
+            </p>
+        </div>
+         <div class="work-box">
+            <a href="https://saket2001.github.io/Js-TImer/" class="workboxlink">
+                <img src="./images/Jstimer.png" alt="site image" srcset="">
+            </a>
+             <p class="hover-text">
+                JS Timer
+                  <span>(Hover)</span>
+            </p>
+        </div>
+         <div class="work-box">
+            <a href="#" class="workboxlink">
+                <img src="" alt="site image" srcset="">
+            </a>
+        </div>
+    </section>
+    <!---Contact form section-->
+    <a name="contact-section"></a>
+    <section class="contact-form">
+        <div id="box1">
+            <div class="form-heading">
+                Contact Information
+            </div>
+            <p class="form-text">
+                Fill up the form so I can get back to you within 24 hours
+            </p>
+            <div class="form-content">
+                <span class="form-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                  color="white"
+                  stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+                <p class="form-text">
+                    +91 9967992889
                 </p>
             </div>
+            <div class="form-content">
+                <span class="form-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                  color="white"
+                  stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </span>
+                <p class="form-text">
+                   saketchandorkar123@gmail.com
+                </p>
+            </div>
+            <div class="form-content">
+                <span class="form-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                  color: rgb(238, 23, 23);
+                  stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </span>
+                <p class="form-text">
+                   Mumbai , India
+                </p>
+            </div>
+            <div id="random-circle2">
+            </div>
+            <div id="random-circle1">
+            </div>
         </div>
-        
-    </div>
+         <div id="box2">
+          <div class="form-inputs">
+              <label for="fn">First name</label>
+              <input type="text" name="" id="fn">
+          </div>
+           <div class="form-inputs">
+              <label for="ln">Last name</label>
+              <input type="text" name="" id="ln">
+          </div>
+           <div class="form-inputs">
+              <label for="email">Email</label>
+              <input type="email" name="" id="email">
+          </div>
+           <div class="form-inputs">
+              <label for="phone">Phone no</label>
+              <input type="text" name="" id="phone">
+          </div>
+           <div class="form-inputs">
+              <label for="message">message</label>
+              <textarea name="" id="message" cols="60" rows="1" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+    </section>
 </body>
 </html>

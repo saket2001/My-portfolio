@@ -1,0 +1,84 @@
+@mixin flexbox($flexway) {
+    display: flex;
+    flex-flow: $flexway wrap;
+    justify-content: center;
+    align-content: center;
+}
+.heading{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(40, 40, 54);
+    color: white;
+    margin: 0;
+    padding: 2%;
+}
+.my-work{
+    width: 100%;
+    height: auto;
+     @include flexbox(row);
+     justify-content: flex-start;
+    .work-box{
+        width: 50%;
+        height: 400px;
+        @include flexbox(column);
+           background-color: rgb(40, 40, 54);
+        transition-property: all;
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        &:hover{
+          opacity: 1;
+          .workboxlink{
+                display: block;
+                opacity: 0.9;
+          }
+          .hover-text{
+              display: none;
+          }
+         }
+        .workboxlink{
+             width: 100%;
+             height: inherit;
+             display: none; 
+             transition-property: display;
+             transition-delay: 2s;
+             transition-duration: 3s;
+             transition-timing-function: ease-in;
+            >img{
+                width: inherit;
+                height: inherit;
+            }
+        }
+        .hover-text{
+            position: absolute;
+            font-size: 60px;
+            opacity: 1;
+            width: inherit;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.884);
+            font-weight: bolder;
+            height: inherit;
+            @include flexbox(column);
+            >span{
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .my-work{
+    width: 100%;
+    height: auto;
+     @include flexbox(column);
+     justify-content: flex-start;
+     opacity: 0.8;
+    .work-box{
+        width: 100%;
+        
+        .hover-text{
+            font-size: 30px;
+        }
+    }
+}
+}

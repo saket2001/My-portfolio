@@ -1,0 +1,202 @@
+@mixin flexbox($flexway) {
+    display: flex;
+    flex-flow: $flexway wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    @include flexbox(row);
+    justify-content: start;
+    width: 100%;
+    font-family: 'Crimson Text', serif;
+    #box1{
+        background-color: rgb(71, 7, 104);
+        width: 35%;
+        height:700px;
+        overflow-x: hidden;
+        border-radius: 10px;
+        @include flexbox(column);
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1%;
+        padding: 1%;
+         #random-circle1{
+            width: 140px;
+            height: 120px;
+            background-color: rgba(61, 104, 221, 0.719);
+            border-radius: 50%;
+            position: relative;
+            left: 320px;
+            top: -210px;
+            margin: 0;
+        }
+         #random-circle2{
+            width: 230px;
+            height: 200px;
+            background-color: rgb(236, 106, 45);
+            border-radius: 50%;
+            position: relative;
+            left: 380px;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+        }
+        .form-heading{
+            font-size: 30px;
+            color: white;
+            padding: 3% 0;
+        }
+        .form-text{
+            color: rgba(255, 255, 255, 0.925);
+            font-size: 22px;
+            &:hover{
+                color: rgb(221, 29, 29);
+            }
+        }
+        .form-content{
+            @include flexbox(row);
+            justify-content: flex-start;
+            width: 100%;
+            .form-icon{
+                padding: 1% 2%;
+            }
+        }
+    }
+    #box2{
+        width: 50%;
+        height: auto;
+        margin: 1%;
+        padding: 1%;
+        @include flexbox(row);
+        justify-content: flex-start;
+        .form-inputs{
+            @include flexbox(column);
+            margin:1%;
+            padding: 5% 2%;
+            width: auto;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: start;
+            background-color: rgba(255, 255, 255, 0.863);
+            >label{
+                color: rgb(95, 91, 91);
+                font-size: 25px;
+                padding: 1% 2%;
+                width: 100%;
+                 &:hover{
+                    color:rgb(8, 8, 129);
+                }
+            }
+            >input[type=text]{
+                width: 300px;
+                padding: 4% 2%;
+                font-size:20px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid blue;
+                 background-color: rgba(255, 255, 255, 0.863);
+                  &:focus{
+                    border-bottom: 2px solid rgb(8, 8, 129);
+                }
+            }
+            >input[type=email]{
+                width: 300px;
+                padding: 4% 2%;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid blue;
+                background-color: rgba(255, 255, 255, 0.863);
+                &:focus{
+                    border-bottom: 2px solid rgb(8, 8, 129);
+                }
+            }
+            >textarea{
+                border: none;
+                padding: 4% 2%;
+                font-size: 20px;
+                outline: none;
+                border-bottom: 1px solid blue;
+                 background-color: rgba(255, 255, 255, 0.863);
+                  &:focus{
+                    border-bottom: 2px solid rgb(8, 8, 129);
+                }
+            }
+        }
+        .btn{
+                width: auto;
+                padding: 2% 3%;
+                background-color: rgb(71, 7, 104);
+                color: white;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                margin: 0 3%;
+                &:hover{
+                   color: black;
+                   background-color: white;
+                   border: 2px solid rgb(71, 7, 104); 
+                }
+            }
+    }
+}
+@media only screen and (max-width:600px){
+    .contact-form{
+    @include flexbox(column);
+    justify-content: center;
+    width: 100%;
+    #box1{
+        background-color: rgb(71, 7, 104);
+        width: 80%;
+        height:auto;
+        margin: 2% auto;
+        padding: 2%;
+        @include flexbox(column);
+         #random-circle1{
+           display: none;
+        }
+         #random-circle2{
+           display: none;
+        }
+        .form-heading{
+            font-size: 25px;
+        }
+        .form-text{
+            font-size: 18px;
+        }
+    }
+    #box2{
+        width: 80%;
+        margin: 2% auto;
+        padding: 2%;
+        @include flexbox(column);
+        justify-content: center;
+        .form-inputs{
+            @include flexbox(column);
+            justify-content: flex-start;
+            margin:1%;
+            padding:2%;
+            width: 100%;
+            >label{
+                color: rgb(95, 91, 91);
+                font-size: 25px;
+                padding: 1% 2%;
+                width: 100%;
+            }
+            >input[type=text]{
+                width: 100%;
+                padding: 2% 2%;
+            }
+            >input[type=email]{
+              width: 100%;
+              padding: 2% 2%;
+            }
+            >textarea{
+                  width: 100%;
+                padding: 2% 2%;
+            }
+        }
+    }
+}
+}

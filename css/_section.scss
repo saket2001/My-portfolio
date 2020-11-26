@@ -1,0 +1,73 @@
+@mixin flexbox($flexway) {
+    display: flex;
+    flex-flow: $flexway wrap;
+    justify-content: center;
+    align-content: center;
+}
+.spl-items{
+    color: blue;
+}
+.section1-container{
+    @include flexbox(column);
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    background-color: rgb(9, 60, 66);
+    
+    .header{
+        @include flexbox(row);
+        justify-content: space-evenly;
+        width: 100%;
+        >p{
+            width: 20%;
+            font-size: 30px;
+            color: rgb(127, 203, 228);
+            text-align: center;
+        }
+    }
+    .content{
+        @include flexbox(row);
+        justify-content: center;
+        width: 100%;
+         >p{
+            width: 40%;
+            font-size: 23px;
+            color: white;
+            padding: 2%;
+            line-height: 30px;
+        }
+    }
+
+}
+@media only screen and (max-width:600px){
+    .section1-container{
+    @include flexbox(row);
+    width: 100%;
+    top: 0;
+     background-color: rgb(43, 37, 37);
+     border: none;
+     color: white;
+    .header{
+        @include flexbox(row);
+        justify-content: space-evenly;
+        width: 100%;
+        >p{
+            width: 30%;
+            font-size: 25px;
+            text-align: left;
+        }
+    }
+    .content{
+        @include flexbox(row);
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+         >p{
+            width: 40%;
+            font-size: 20px;
+            padding: 0 2%;
+            
+        }
+    }
+}
+}
