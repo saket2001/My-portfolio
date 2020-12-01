@@ -32,7 +32,6 @@ header{
         >a{
             @include a-links();
             font-size: 24px;
-            font-weight: bold;
             text-transform: 
             uppercase;
             margin: 1%;
@@ -75,7 +74,7 @@ header{
             line-height: 52px;
              .Tag{
                 font-size: 35px;
-                color: rgba(255, 255, 255, 0.774);
+                color: rgba(255, 255, 255, 0.884);
                 font-family: Arial, Helvetica, sans-serif;
             }
             .box1{
