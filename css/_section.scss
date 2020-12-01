@@ -43,9 +43,10 @@
 }
 @media only screen and (max-width:600px){
     .section1-container{
-    @include flexbox(column);
+    @include flexbox(row);
     width: 100%;
     justify-content: flex-start;
+    height: 100vh;
     .block_container{
         @include flexbox(column);
         width: 100%;

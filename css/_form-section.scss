@@ -149,7 +149,7 @@
     #box1{
         background-color: rgb(71, 7, 104);
         width: 80%;
-        height:auto;
+        height:60vh;
         margin: 2% auto;
         padding: 2%;
         @include flexbox(column);
@@ -168,6 +168,7 @@
     }
     #box2{
         width: 80%;
+        height: 100vh;
         margin: 2% auto;
         padding: 2%;
         @include flexbox(column);

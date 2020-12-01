@@ -129,8 +129,7 @@ header{
 /*for mobile screens*/
 @media only screen and (max-width:600px){
     header{
-        height: 60vh;
-        
+        height: 100vh;
     .navbar{
         flex-flow: column;
         justify-content: space-between;
@@ -158,22 +157,22 @@ header{
             justify-content:center;
             text-align: left;
             width: auto;
-            top: 40px;
+            top: 140px;
             left: 0;
             line-height: 30px;
             .Tag{
                 font-size: 20px;
             }
             .box1{
-                font-size: 30px;
+                font-size: 40px;
                 padding: 2% 0;
             }
             .btn-box{
                 flex-direction: row;
                 justify-content: left;
                 .btns{
-                    width: 90px;
-                    font-size: 12px;
+                    width: 120px;
+                    font-size: 15px;
                 }
             }
         }
