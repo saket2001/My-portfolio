@@ -19,7 +19,7 @@ header{
     background-position: center;
     background-blend-mode: lighten;
     background-color: rgb(40, 40, 54);
-    height: 90vh;
+    height: 100vh;
    // border-bottom-left-radius: 20%;
     .navbar{
         @include flex(row);
@@ -107,6 +107,13 @@ header{
                     &:hover{
                         background-color: transparent;
                         border: 1px solid blue;
+                    }
+                }
+                .Rate-btn{
+                    @extend .btns;
+                     a{
+                        color: white;
+                        text-decoration: none;
                     }
                 }
                 .mail-me{
