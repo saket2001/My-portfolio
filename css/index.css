@@ -657,14 +657,16 @@ header .container .name-tag-box .btn-box .mail-me:hover {
         -ms-flex-align: center;
             align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .contact-form #box1 {
     background-color: #470768;
-    width: 80%;
-    height: 60vh;
-    margin: 2% auto;
-    padding: 2%;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -678,6 +680,10 @@ header .container .name-tag-box .btn-box .mail-me:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .contact-form #box1 .form-heading {
     font-size: 25px;

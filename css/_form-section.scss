@@ -53,14 +53,19 @@
     .contact-form{
     @include flexbox(column);
     justify-content: center;
+    align-items: center;
     width: 100%;
     #box1{
         background-color: rgb(71, 7, 104);
-        width: 80%;
-        height:60vh;
-        margin: 2% auto;
-        padding: 2%;
+        width: 100%;
+        height:auto;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
         @include flexbox(column);
+         justify-content: center;
+         align-items: center;
+         align-content: center;
         .form-heading{
             font-size: 25px;
         }
