@@ -19,13 +19,14 @@
         width: 50%;
         height: auto;
         .header{
-            height: 100px;
+            height: auto;
+            margin-bottom: 2%;
         >p{
             width: inherit;
             font-size: 40px;
             color: rgb(127, 203, 228);
             text-align: left;
-            padding: 1% 4%;
+            padding: 2% 4%;
         }
     }
     .content{
@@ -52,7 +53,7 @@
         width: 100%;
          height: auto;
         .header{
-            height: 100px;
+            height: auto;
         >p{
             font-size: 35px;
             text-align: center;
