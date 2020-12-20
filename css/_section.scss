@@ -1,0 +1,75 @@
+@mixin flexbox($flexway) {
+    display: flex;
+    flex-flow: $flexway wrap;
+    justify-content: center;
+    align-content: center;
+}
+.spl-items{
+    color: blue;
+}
+.section1-container{
+    @include flexbox(row);
+    background-color: rgb(40, 40, 54);
+    width: 100%;
+    height: 50vh;
+    justify-content: flex-start;
+    .block_container{
+        margin: 2% 0;
+        @include flexbox(column);
+        width: 50%;
+        height: auto;
+        .header{
+            height: auto;
+            margin-bottom: 2%;
+        >p{
+            width: inherit;
+            font-size: 40px;
+            color: rgb(127, 203, 228);
+            text-align: left;
+            padding: 2% 4%;
+        }
+    }
+    .content{
+         >p{
+            width: inherit;
+            font-size: 25px;
+            color: white;
+            padding: 2%;
+            line-height: 30px;
+            padding: 2% 4%;
+            text-align: left;
+        }
+    }
+    }
+}
+@media only screen and (max-width:600px){
+    .section1-container{
+    @include flexbox(row);
+    width: 100%;
+    justify-content: flex-start;
+    height: 100vh;
+    .block_container{
+        @include flexbox(column);
+        width: 100%;
+         height: auto;
+        .header{
+            height: auto;
+        >p{
+            font-size: 35px;
+            text-align: left;
+        }
+    }
+    .content{
+        width:100% ;
+         height: auto;
+         >p{
+            margin: 0 2%;
+            font-size: 22px;
+            padding: 2%;
+            line-height: 30px;
+            text-align: left;
+        }
+    }
+    }
+}
+}
