@@ -56,17 +56,18 @@
             height: auto;
         >p{
             font-size: 35px;
-            text-align: center;
+            text-align: left;
         }
     }
     .content{
+        width:100% ;
          height: auto;
          >p{
             margin: 0 2%;
             font-size: 22px;
             padding: 2%;
             line-height: 30px;
-            text-align: center;
+            text-align: left;
         }
     }
     }

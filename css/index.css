@@ -389,9 +389,10 @@ header .container .name-tag-box .btn-box .mail-me:hover {
   }
   .section1-container .block_container .header > p {
     font-size: 35px;
-    text-align: center;
+    text-align: left;
   }
   .section1-container .block_container .content {
+    width: 100%;
     height: auto;
   }
   .section1-container .block_container .content > p {
@@ -399,18 +400,18 @@ header .container .name-tag-box .btn-box .mail-me:hover {
     font-size: 22px;
     padding: 2%;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
   }
 }
 
 .heading {
-  font-size: 35px;
+  font-size: 50px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   background-color: #282836;
   color: white;
   margin: 0;
-  padding: 2%;
+  padding: 5% 2%;
 }
 
 .my-work {
@@ -434,94 +435,155 @@ header .container .name-tag-box .btn-box .mail-me:hover {
 }
 
 .my-work .work-box {
-  width: 50%;
-  height: 400px;
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #282836;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
 }
 
-.my-work .work-box:hover {
-  opacity: 1;
-}
-
-.my-work .work-box:hover .workboxlink {
-  display: block;
-  opacity: 0.9;
-}
-
-.my-work .work-box:hover .hover-text {
-  display: none;
-}
-
-.my-work .work-box .workboxlink {
-  width: 100%;
-  height: inherit;
-  display: none;
-  -webkit-transition-property: display;
-  transition-property: display;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-}
-
-.my-work .work-box .workboxlink > img {
-  width: inherit;
-  height: inherit;
-}
-
-.my-work .work-box .hover-text {
-  position: absolute;
-  font-size: 60px;
-  opacity: 1;
-  width: inherit;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.884);
-  font-weight: bolder;
-  height: inherit;
+.my-work .work-box .text-box {
+  width: 50%;
+  height: 70%;
+  color: white;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.my-work .work-box .hover-text > span {
-  font-size: 25px;
+.my-work .work-box .text-box .box-heading {
+  width: auto;
+  text-align: start;
+  font-size: 36px;
+  padding-left: 5%;
+}
+
+.my-work .work-box .text-box .small-heading {
+  padding-left: 5%;
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.my-work .work-box .text-box .box-btn {
+  width: 150px;
+  height: 40px;
+  margin: 1% 5%;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #5050ec;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.my-work .work-box .text-box .box-btn:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+}
+
+.my-work .work-box .text-box .box-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.my-work .work-box .image-box {
+  width: 50%;
+  height: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.my-work .work-box .image-box > img {
+  width: 90%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 @media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10%;
+  }
   .my-work {
     width: 100%;
-    height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .my-work .work-box {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-content: center;
+    padding: 2% 0;
+  }
+  .my-work .work-box .text-box {
+    width: 100%;
+    height: 50vh;
+    color: white;
+    padding: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -534,16 +596,43 @@ header .container .name-tag-box .btn-box .mail-me:hover {
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    opacity: 0.8;
+    justify-content: center;
   }
-  .my-work .work-box {
-    width: 100%;
+  .my-work .work-box .text-box .box-heading {
+    width: auto;
+    text-align: start;
+    font-size: 25px;
+    padding-left: 0;
   }
-  .my-work .work-box .hover-text {
-    font-size: 30px;
+  .my-work .work-box .text-box .small-heading {
+    padding-left: 5%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .my-work .work-box .text-box .box-btn {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .my-work .work-box .image-box {
+    display: none;
+  }
+  .box-change {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
 }
 
