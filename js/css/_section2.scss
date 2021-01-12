@@ -1,0 +1,42 @@
+@mixin flexbox($flexway) {
+  display: flex;
+  flex-flow: $flexway wrap;
+  justify-content: center;
+  align-content: center;
+}
+.heading {
+  font-size: 50px;
+  width: 100%;
+  font-weight: 800;
+  text-align: left;
+  background-color: white;
+  color: blue;
+  margin: 0;
+  padding: 5% 2%;
+  font-family: "Kufam", cursive;
+}
+.work-container {
+  font-family: "Kufam", cursive;
+  padding: 5%;
+  background-image: url("../images/bg-curve-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  .card {
+    border-radius: 15px;
+    &:hover {
+      box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #f6f6f6;
+    }
+    button {
+      font-size: 18px;
+      > a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .heading {
+    text-align: center;
+    font-weight: 500;
+  }
+}

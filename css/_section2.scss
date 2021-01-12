@@ -1,136 +1,42 @@
 @mixin flexbox($flexway) {
-    display: flex;
-    flex-flow: $flexway wrap;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-flow: $flexway wrap;
+  justify-content: center;
+  align-content: center;
 }
-.heading{
-    font-size: 50px;
-    width: 100%;
-    text-align: left;
-    background-color: rgb(40, 40, 54);
-    color: white;
-    margin: 0;
-    padding: 5% 2%;
+.heading {
+  font-size: 50px;
+  width: 100%;
+  font-weight: 800;
+  text-align: left;
+  background-color: white;
+  color: blue;
+  margin: 0;
+  padding: 5% 2%;
+  font-family: "Kufam", cursive;
 }
-.my-work{
-    width: 100%;
-    height: auto;
-     @include flexbox(row);
-     justify-content: flex-start;
-    .work-box{
-        width: 100%;
-        height: 100vh;
-        @include flexbox(row);
-        background-color: rgb(40, 40, 54);
-         .text-box{
-             width: 50%;
-             height: 70%;
-             color: white;
-             padding: 0;
-             margin: 0;
-             @include flexbox(row);
-             justify-content: left;
-             align-items: center;
-             .box-heading{
-                 width: auto;
-                 text-align: start;
-                 font-size: 36px;
-                 padding-left: 5%;
-             }
-             .small-heading{
-                 padding-left: 5%;
-                 text-align: left;
-                 font-size: 20px;   
-                 line-height: 30px; 
-             }
-             .box-btn{
-                    width: 150px;
-                    height: 40px;
-                    margin: 1% 5%;
-                    font-size: 18px;
-                    font-weight: 500;
-                    background-color:rgb(80, 80, 236);
-                    color:white;
-                    border: none;
-                    text-transform: uppercase;
-                    border-radius:5px;
-                    transition-property: all;
-                    transition-duration: 1s;
-                    transition-delay: .1s;
-                    transition-timing-function:linear;
-                    &:hover{
-                        background-color: transparent;
-                        border: 1px solid blue;
-                    }
-                    a{
-                        text-decoration: none;
-                        color: white;
-                    }
-                }
-         }
-         .image-box{
-             width: 50%;
-             height: 70%;
-             padding: 0;
-             margin: 0;
-             >img{
-                 width: 90%;
-                 height: 100%;
-                 padding-left: 5%;
-                 padding-right: 3%;
-             }
-         }
+.work-container {
+  font-family: "Kufam", cursive;
+  padding: 5%;
+  background-image: url("../images/bg-curve-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  .card {
+    border-radius: 15px;
+    &:hover {
+      box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #f6f6f6;
     }
+    button {
+      font-size: 18px;
+      > a {
+        text-decoration: none;
+      }
+    }
+  }
 }
-@media only screen and (max-width:600px){
-    .heading{
-    font-size: 30px;
+@media only screen and (max-width: 600px) {
+  .heading {
     text-align: center;
-    padding-bottom: 10%;
-    }
-    .my-work{
-    width: 100%;
-    height: fit-content;
-    @include flexbox(row);
-      .work-box{
-        width: 100%;
-        height: 100%;
-        @include flexbox(row);
-        justify-content: center;
-        padding: 2% 0;
-         .text-box{
-             width: 100%;
-             height: 50vh;
-             color: white;
-             padding: 2%;
-             @include flexbox(column);
-             justify-content: center;
-             .box-heading{
-                 width: auto;
-                 text-align: start;
-                 font-size: 25px;
-                 padding-left: 0;
-             }
-             .small-heading{
-                 padding-left: 5%;
-                 text-align: left;
-                 font-size: 18px;  
-                 line-height: 25px;
-             }
-             .box-btn{
-                    width: 120px;
-                    height: 30px;
-                    font-size: 15px;
-                }
-         }
-         .image-box{
-             display: none
-         }
-    }
-}
-  .box-change{
-    @include flexbox(column);
-    flex-direction: column-reverse;
-    }
+    font-weight: 500;
+  }
 }

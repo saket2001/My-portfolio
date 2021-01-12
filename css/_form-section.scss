@@ -8,9 +8,9 @@
     @include flexbox(row);
     justify-content: center;
     width: 100%;
-    font-family: 'Crimson Text', serif;
+     font-family: 'Kufam', cursive;
     #box1{
-        background-color: rgb(71, 7, 104);
+        background-color: blue;
         width: 100%;
         height:auto;
         overflow-x: hidden;
@@ -29,7 +29,7 @@
             color: rgba(255, 255, 255, 0.925);
             font-size: 22px;
             &:hover{
-                color: rgb(221, 29, 29);
+               color: yellow;
             }
               a{
                 color: white;
@@ -56,7 +56,6 @@
     align-items: center;
     width: 100%;
     #box1{
-        background-color: rgb(71, 7, 104);
         width: 100%;
         height:auto;
         border-radius: 0;
@@ -74,9 +73,6 @@
             a{
                 color: white;
                 text-decoration: none;
-                &:hover{
-                    color: red;
-                }
             }
         }
     }
