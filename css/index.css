@@ -60,7 +60,7 @@ header .navbar .nav-items {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
-  padding: 2%;
+  padding: 0 2%;
 }
 
 header .navbar .nav-items .nav-links {
@@ -72,7 +72,7 @@ header .navbar .nav-items .nav-links {
   outline: none;
   font-size: 25px;
   font-weight: 200;
-  padding: 1% 3%;
+  padding: 0 3%;
   color: black;
 }
 
@@ -184,6 +184,9 @@ header .container .img-box {
   }
   header .navbar .nav-items .nav-links {
     font-size: 20px;
+  }
+  header .container {
+    margin-top: 15%;
   }
   header .container .text-box {
     margin: 1% auto;
