@@ -2,9 +2,8 @@ gsap.registerPlugin(ScrollTrigger);
 //header
 gsap.from(".navbar", {
   opacity: 0,
-  y: -100,
+  y: -50,
   duration: 1,
-  delay: 1,
   ease: Power2.out,
   scrollTrigger: {
     trigger: ".navbar",
@@ -72,30 +71,14 @@ gsap.from(".heading", {
     toggleActions: "restart pause resume none",
   },
 });
-
-gsap.from(".left", {
+gsap.from(".col", {
   opacity: 0,
-  x: -300,
+  x: -500,
   duration: 1,
   ease: Power2.out,
   scrollTrigger: {
-    trigger: ".left",
+    trigger: ".col",
     start: "top center",
     toggleActions: "restart pause resume none",
   },
 });
-gsap.from(".right", {
-  opacity: 0,
-  x: 500,
-  duration: 1,
-  ease: Power2.out,
-  scrollTrigger: {
-    trigger: ".right",
-    start: "top center",
-    toggleActions: "restart pause resume none",
-  },
-});
-//
-
-
-
