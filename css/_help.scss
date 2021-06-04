@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+// 
+$off-white-bg:#FFFFFF;
+$white-light:rgb(238, 238, 238);
+$black-font:#1B1C1E;
+$black-light:#303030;
+// 
+
+@mixin flex($flex-direction) {
+    display: flex;
+    flex-flow: $flex-direction wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin a-links {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 1%;
+    border: none;
+    outline: none;
+}
+
+// 
+html,
+body {
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    font-size: 100%;
+}

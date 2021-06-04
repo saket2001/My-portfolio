@@ -1,42 +1,75 @@
-@mixin flexbox($flexway) {
-  display: flex;
-  flex-flow: $flexway wrap;
-  justify-content: center;
-  align-content: center;
-}
 .heading {
   font-size: 50px;
   width: 100%;
-  font-weight: 800;
+  font-weight: bold;
   text-align: left;
   background-color: white;
-  color: blue;
+  color: $black-font;
   margin: 0;
   padding: 5% 2%;
-  font-family: "Kufam", cursive;
 }
+
 .work-container {
-  font-family: "Kufam", cursive;
   padding: 5%;
   background-image: url("../images/bg-curve-desktop.svg");
   background-position: center;
   background-size: cover;
+
+
   .card {
     border-radius: 15px;
+
+    .card-body {
+      .card-title {
+        font-size: 28px;
+      }
+
+      .card-text {
+        font-size: 20px;
+      }
+
+      .btn {
+        width: 50%;
+        font-size: 28px;
+        padding: 0;
+        text-align: left;
+
+        a {
+          width: 100%;
+          @include a-links();
+          color: blue;
+          text-decoration: none;
+        }
+      }
+    }
+
     &:hover {
       box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #f6f6f6;
     }
-    button {
-      font-size: 18px;
-      > a {
-        text-decoration: none;
-      }
-    }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .heading {
     text-align: center;
-    font-weight: 500;
+  }
+
+  .card {
+    .card-body {
+
+      .card-title {
+        font-size: 22px;
+      }
+
+      .card-text {
+        font-size: 18px;
+      }
+
+      .btn {
+        width: 50%;
+        font-size: 26px;
+      }
+    }
+
   }
 }

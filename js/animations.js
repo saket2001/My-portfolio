@@ -16,7 +16,7 @@ gsap.from([".text-box", ".btn-box"], {
   opacity: 0,
   x: -300,
   duration: 1,
-  delay:1,
+  delay: 1,
   ease: Power2.out,
   scrollTrigger: {
     trigger: [".text-box", ".btn-box"],
@@ -44,7 +44,7 @@ gsap.from("#block1", {
   ease: Power2.out,
   scrollTrigger: {
     trigger: "#block1",
-    toggleActions:"restart pause resume none",
+    toggleActions: "restart pause resume none",
     start: "top center",
   },
 });
