@@ -41,7 +41,7 @@
         }
 
         .form-content {
-            @include flexbox(row);
+            @include flex(row);
             justify-content: flex-start;
             width: 100%;
 
