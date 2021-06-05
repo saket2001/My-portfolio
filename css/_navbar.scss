@@ -1,0 +1,139 @@
+html,
+body {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #303030;
+    background-color: #ffff;
+    height: 100vh;
+}
+
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    transform: translateX(0px);
+}
+
+nav {
+    width: 100%;
+    padding: 1%;
+    @include flex(row);
+    justify-content: space-evenly;
+
+    #nav_logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 0 2%;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    #nav_container {
+        width: 50%;
+        display: inherit;
+        padding: 0 2%;
+        justify-content: center;
+
+        .nav__item {
+            padding: 1% 2%;
+            margin: 0 1%;
+
+            .nav__links {
+                text-transform: capitalize;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: inherit;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                border-bottom: 0.1rem solid black;
+            }
+        }
+    }
+}
+
+#nav_responsive_container {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        justify-content: space-between;
+
+        #nav_logo {
+            font-size: 1.2rem;
+            padding: 1% 2%;
+        }
+
+        #nav_container {
+            display: none;
+        }
+
+        #nav_icon {
+            width: 10%;
+            padding: 1% 3%;
+            display: inherit;
+            justify-content: center;
+            align-self: center;
+
+            img {
+                width: 3rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    #nav_responsive_container {
+        transform: translateX(800px);
+        width: 100%;
+        height: 20vh;
+        z-index: 5;
+        @include flex(column);
+        justify-content: flex-start;
+        background-color: rgb(230, 239, 241);
+        transition: all 1s ease-in-out;
+
+        .nav__item {
+            padding: 1% 2%;
+            margin: 1%;
+            width: 100%;
+            text-align: center;
+
+            .nav__links {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: inherit;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                background-color: rgb(215, 223, 224);
+            }
+        }
+
+        display: none;
+    }
+
+    #nav_responsive_container.hidden {
+        transform: translateX(0px);
+        display: flex;
+    }
+}

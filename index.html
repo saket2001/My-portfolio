@@ -20,12 +20,32 @@
     <!--icons src-->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--  -->
+    <script defer src="./js/navbar.js"></script>
 </head>
 
 <body>
     <!--navbar-->
     <header>
-        <div class="navbar">
+        <nav>
+            <div id="nav_logo">
+                <a href="./index.html" class="nav-title">PORTFOLIO 2020</a>
+            </div>
+            <div id="nav_container">
+                <div class="nav__item"><a href="#work-section" class="nav__links">My work</a></div>
+                <div class="nav__item"><a href="#contact-section" class="nav__links">Contact me</a></div>
+                <!-- <a href="#work-section" class="nav-links">My Work</a>
+                <a href="#contact-section" class="nav-links">Contact me</a> -->
+            </div>
+            <div class="hidden" id="nav_icon">
+                <img src="./icons/menu_black_36dp.svg" alt="nav icon">
+            </div>
+        </nav>
+        <div id="nav_responsive_container">
+            <div class="nav__item"><a href="#work-section" class="nav__links">My work</a></div>
+            <div class="nav__item"><a href="#contact-section" class="nav__links">Contact me</a></div>
+        </div>
+        <!-- <div class="navbar">
             <div class="logo">
                 <a href="./index.html" class="nav-title">PORTFOLIO 2020</a>
             </div>
@@ -33,7 +53,7 @@
                 <a href="#work-section" class="nav-links">My Work</a>
                 <a href="#contact-section" class="nav-links">Contact me</a>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="text-box">
                 Hello, I'm Saket, I Build Websites and Web App, <br> And I Love Building them
@@ -103,7 +123,7 @@
                 <!-- card 1 -->
                 <div class="col left">
                     <div class="card">
-                        <img src="./images/To do app-ss.png" class="card-img-top" alt="...">
+                        <img loading="lazy" src="./images/To do app-ss.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">To Do App</h5>
                             <p class="card-text">
@@ -266,7 +286,7 @@
     </section>
 
     <!---Contact form section-->
-    <a name=" contact-section"></a>
+    <a name="contact-section"></a>
     <section class="contact-form">
         <div id="box1">
             <div class="form-heading">
