@@ -5,7 +5,20 @@ $off-white-bg:#FFFFFF;
 $white-light:rgb(238, 238, 238);
 $black-font:#1B1C1E;
 $black-light:#303030;
+
 // 
+:root {
+    // light mode
+    --font-darker: #1B1C1E;
+    --font-dark: #303030;
+    --bg-light: #FFFFFF;
+    --bg-dark: #ffffff;
+    --hover1-light: #d6d6d6;
+    --hover2-light: #f6f6f6;
+    --link: blue;
+    --border: #e6e6e6;
+
+}
 
 @mixin flex($flex-direction) {
     display: flex;
@@ -23,6 +36,8 @@ $black-light:#303030;
     outline: none;
 }
 
+
+
 // 
 html {
     scroll-behavior: smooth;
@@ -33,4 +48,17 @@ body {
     font-family: 'Roboto Condensed',
         sans-serif;
     font-size: 100%;
+}
+
+.dark-mode {
+    // dark mode
+    --font-darker: #FFFFFF;
+    --font-dark: #fceeee;
+    --bg-light: #303030;
+    --bg-dark: #1B1C1E;
+    --hover1-light: #241f1f;
+    --hover2-light: #272424;
+    --link: #e6e6e6;
+    --border: #272424;
+
 }

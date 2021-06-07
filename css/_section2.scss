@@ -3,48 +3,63 @@
   width: 100%;
   font-weight: bold;
   text-align: left;
-  background-color: white;
-  color: $black-font;
+  background-color: var(--bg-light);
+  color: var(--font-darker);
   margin: 0;
   padding: 5% 2%;
 }
 
 .work-container {
   padding: 5%;
-  background-image: url("../images/bg-curve-desktop.svg");
-  background-position: center;
-  background-size: cover;
-
+  // background-image: url("../images/bg-curve-desktop.svg");
+  // background-position: center;
+  // background-size: cover;
+  background: var(--bg-light);
 
   .card {
+    background: var(--bg-dark);
     border-radius: 15px;
 
+    img {
+      border: none;
+      outline: none;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
     .card-body {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border: 1px solid var(--border);
+
       .card-title {
         font-size: 28px;
+        color: var(--font-darker);
       }
 
       .card-text {
         font-size: 20px;
+        color: var(--font-dark);
       }
 
       .btn {
         width: 50%;
-        font-size: 28px;
+        font-weight: bold;
         padding: 0;
         text-align: left;
 
         a {
           width: 100%;
+          font-size: 30px;
           @include a-links();
-          color: blue;
+          color: var(--link);
           text-decoration: none;
         }
       }
     }
 
     &:hover {
-      box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #f6f6f6;
+      box-shadow: 5px 5px 10px var(--hover1-light), -5px -5px 10px var(--hover2-light);
     }
   }
 }
@@ -67,7 +82,6 @@
 
       .btn {
         width: 50%;
-        font-size: 26px;
       }
     }
 

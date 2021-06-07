@@ -1,14 +1,13 @@
 header {
-    background-color: $off-white-bg;
+    background-color: var(--bg-light);
     height: 100vh;
-    color: black;
 
-    .navbar {
+    nav {
         @include flex(row);
         justify-content: space-between;
         width: 100%;
         padding: 1%;
-        color: black;
+        color: var(--font-darker);
 
         .logo {
             font-weight: bold;
@@ -22,7 +21,7 @@ header {
                     uppercase;
                 margin: 1%;
                 font-weight: bold;
-                color: $black-font;
+                color: var(--font-darker);
             }
         }
 
@@ -37,11 +36,22 @@ header {
                 font-weight: 200;
                 padding: 0 3%;
                 font-weight: 600;
-                color: black;
+                color: var(--font-darker);
 
                 &:hover {
-                    border-bottom: 2px solid blue;
+                    border-bottom: 2px solid var(--link);
                 }
+            }
+        }
+
+        #switch_box {
+            @include flex(column);
+            width: 10%;
+            padding: 0 2%;
+            margin: 0 1%;
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -56,6 +66,7 @@ header {
             font-weight: 600;
             padding: 2%;
             text-align: center;
+            color: var(--font-dark);
 
             span {
                 font-size: 25px;
@@ -94,6 +105,8 @@ header {
             padding: 2%;
         }
     }
+
+
 }
 
 /*for mobile screens*/
@@ -121,6 +134,12 @@ header {
                 .nav-links {
                     font-size: 20px;
                 }
+            }
+
+            #switch_box {
+                width: 5%;
+                padding: 1% 2%;
+
             }
         }
 
