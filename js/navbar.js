@@ -24,7 +24,6 @@ btn.addEventListener("click", (e) => {
   if (clicked.classList.contains("moon")) {
     sunLogo.classList.toggle("hidden");
     moonLogo.classList.toggle("hidden");
-    nav_icon.querySelector("img").src = "./icons/menu_black_36dp.svg";
   }
   // change colors
   document.querySelector("body").classList.toggle("dark-mode");
