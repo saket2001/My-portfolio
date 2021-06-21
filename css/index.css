@@ -614,7 +614,6 @@ nav #nav_container .nav__item:hover {
 .work-container .card .card-body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  border: 1px solid var(--border);
 }
 
 .work-container .card .card-body .card-title {
@@ -625,6 +624,11 @@ nav #nav_container .nav__item:hover {
 .work-container .card .card-body .card-text {
   font-size: 20px;
   color: var(--font-dark);
+}
+
+.work-container .card .card-body .card-text span {
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 .work-container .card .card-body .btn {

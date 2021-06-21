@@ -38,7 +38,6 @@
     .card-body {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
-      border: 1px solid var(--border);
 
       .card-title {
         font-size: 28px;
@@ -48,6 +47,11 @@
       .card-text {
         font-size: 20px;
         color: var(--font-dark);
+
+        span {
+          text-decoration: underline;
+          font-weight: bolder;
+        }
       }
 
       .btn {
